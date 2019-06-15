@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Welcome !"
+            android:textSize="35sp"
+             />
+
+        <TextView
+            android:id="@+id/textHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To view my profile click on MY PROFILE. To view the list of countries press on LIST OF COUNTRIES"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/inika"
+
+
+
+            />
+
+
+        <Button
+            android:id="@+id/mypro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="59dp"
+            android:fontFamily="@font/inika"
+            android:text="My profile" />
+
+        <Button
+            android:id="@+id/list_country"
+            android:fontFamily="@font/inika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of countries"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:layout_alignLeft="@id/mypro"
+            android:layout_marginLeft="130dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

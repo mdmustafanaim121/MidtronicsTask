@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilePage" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilePage">
+
+
+    <RelativeLayout
+        android:id="@+id/mainDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        >
+        <RelativeLayout
+            android:id="@+id/profilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_profile"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/memus"
+                android:background="@drawable/profile_shape"
+                android:adjustViewBounds="true"
+                android:layout_margin="9dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohammed Mustafa Naim "
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_below="@+id/profilePic"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicago,Illinois"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainDisplay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0faaae"
+                    android:text="Email address :"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="mdmustafanaim121@gmail.com"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/backgrey"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0faaae"
+                    android:text="Education Summary:"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:text="Master of Science(MS), Computer Science "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Northeastern Illinois University    GPA: 3.67/4  "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Chicago,Illinois                                  August 2019"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:text="
+Bachelor of Science(BS), Computer Science "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Osmania University                         GPA: 3.48/4  "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Hyderabad,India                                June 2017"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/backgrey"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0faaae"
+                    android:text="Work Experience:"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:text="Graduate Assistant "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="College of Education ,Northeastern Illinois University  "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Chicago,Illinois                      Sept 2017 – Present "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:textStyle="italic"
+                    android:text="
+            'As a graduate assistant my job role was to process,filter and analyze all the raw data collected from the server and then to create an excel sheet from it. Apart from that my duty was also to create power point presentations and to give workshop to student teachers on it.' "
+
+                    android:layout_marginBottom="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:text="
+Student Partner "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Microsoft    "
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Hyderabad,India                      Nov 2015 – Apr 2017 "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"
+                    android:text="
+            'As a Student Partner, I have worked with Microsft officials and have given workshop and presentation on their technologies like Microsft Azure. I also worked along with a team of 4 other student partner and took part in a hackathon hosted by Microsft. Other job duties was to market about microsoft opportunities and to let the gradutes know that microsoft is hiring .' "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed-medium"
+
+                    android:text="
+Android developer "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="IEEE Computer Society - MJCET    "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:text="Hyderabad,India                          Apr 2014 – Dec 2016"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#102020"
+                    android:textSize="13sp"
+                    app:fontFamily="sans-serif"
+                    android:textStyle="italic"
+
+                    android:text="
+            'As an android developer I have worked along with a team of 5 members and have developed applications on quiz, survey forms and single user games. Also, I have served as an Vice chair for the student body and my job role was to administer the club and work along with my juniors in helping them learn and develop applications.' "/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/backgrey"></View>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>
+

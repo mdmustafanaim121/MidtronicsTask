@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryDetails" >
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryDetails"
+    android:paddingTop="35dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/background">
+<RelativeLayout>
+    <TextView
+        android:id="@+id/CountryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Country name"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+
+        />
+</RelativeLayout>
+    <RelativeLayout>
+    <TextView
+    android:id="@+id/capital"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:autoSizeTextType="uniform"
+    android:textColor="@android:color/black"
+    android:fontFamily="sans-serif"
+    android:textSize="20sp"
+    android:layout_marginTop="20dp"
+
+    android:text="Capital: "/>
+
+    <TextView
+        android:id="@+id/capitalAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/capital"
+        android:layout_toRightOf="@+id/capital"
+        android:hint="CapitalAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Area:    "/>
+
+        <TextView
+            android:id="@+id/areaAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/area"
+            android:hint="areaAns"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        android:text="Region:    "/>
+
+    <TextView
+        android:id="@+id/regionAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/region"
+        android:hint="regionAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/subRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Sub Region:    "/>
+
+    <TextView
+        android:id="@+id/subRegionAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/subRegion"
+        android:layout_toRightOf="@+id/subRegion"
+        android:hint="subRegionAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/demonym"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Demonym:    "/>
+
+    <TextView
+        android:id="@+id/demonymAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/demonym"
+        android:layout_toRightOf="@+id/demonym"
+        android:hint="demonymAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/nativeName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Native Name:    "/>
+
+    <TextView
+        android:id="@+id/nativeNameAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/nativeName"
+        android:layout_toRightOf="@+id/nativeName"
+        android:hint="nativeNameAns"
+        android:fontFamily="sans-serif"
+
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/relevance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Relevance:    "/>
+
+    <TextView
+        android:id="@+id/relevanceAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/relevance"
+        android:hint="relevanceAns"
+        android:textColor="@android:color/black"
+
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/alphacode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Alpha Code 2:    "/>
+
+    <TextView
+        android:id="@+id/alphacode2Ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/alphacode2"
+        android:layout_toRightOf="@+id/alphacode2"
+        android:hint="alphacode2Ans"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/alphacode3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Alpha code 3:    "/>
+
+    <TextView
+        android:id="@+id/alphacode3Ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/alphacode3"
+        android:layout_toRightOf="@+id/alphacode3"
+        android:hint="alphacode3Ans"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Population:    "/>
+
+    <TextView
+        android:id="@+id/populationAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/population"
+        android:layout_toRightOf="@+id/population"
+        android:hint="populationAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/callingCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Calling Code:    "/>
+
+    <TextView
+        android:id="@+id/callingCodeAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/callingCode"
+        android:layout_toRightOf="@+id/callingCode"
+        android:hint="callingCodeAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/gini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Gini:    "/>
+
+    <TextView
+        android:id="@+id/giniAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="191dp"
+        android:layout_marginLeft="191dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/gini"
+        android:layout_toRightOf="@+id/gini"
+        android:hint="giniAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/numericCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Numeric Code:    "/>
+
+    <TextView
+        android:id="@+id/numericCodeAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/numericCode"
+        android:layout_toRightOf="@+id/numericCode"
+        android:hint="numericCodeAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Latitude:    "/>
+
+    <TextView
+        android:id="@+id/latAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/lat"
+        android:layout_toRightOf="@+id/lat"
+        android:hint="latAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Longitude:    "/>
+
+    <TextView
+        android:id="@+id/lngAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/lng"
+        android:layout_toRightOf="@+id/lng"
+        android:hint="lngAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/topLevelDomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Top Level Domain:    "/>
+
+    <TextView
+        android:id="@+id/topLevelDomainAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/topLevelDomain"
+        android:layout_toRightOf="@+id/topLevelDomain"
+        android:hint="topLevelDomainAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/currencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Currencies:    "/>
+
+    <TextView
+        android:id="@+id/currenciesAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/currencies"
+        android:layout_toRightOf="@+id/currencies"
+        android:hint="currenciesAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Time Zone:    "/>
+
+    <TextView
+        android:id="@+id/timezoneAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/timezone"
+        android:layout_toRightOf="@+id/timezone"
+        android:hint="timezoneAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Languages:    "/>
+
+    <TextView
+        android:id="@+id/languagesAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/languages"
+        android:layout_toRightOf="@+id/languages"
+        android:hint="languagesAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout>
+    <TextView
+        android:id="@+id/borders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Borders: "/>
+
+
+    <TextView
+        android:id="@+id/bordersAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/borders"
+        android:layout_toRightOf="@+id/borders"
+        android:hint="BordersAns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </RelativeLayout>
+</TableLayout>
+
+
+</ScrollView>
